@@ -2,13 +2,23 @@
 
 Everything needed to rebuild the 04:04 Hindi explainer video from static PNGs.
 
-| Folder | What it is |
+## In this folder
+
+| Path | What it is |
 |---|---|
-| `spec/` | `Birthday_Video_Build_Spec.md` — the full build brief: render settings, asset manifest, motion rules, 56-shot timeline with in/out timecodes, text copy with cue frames, voiceover map, verification checklist, and a JSON timeline an agent can load directly |
-| `shotlist/` | `Birthday_Video_Shotlist.xlsx` — the same timeline as a spreadsheet (Shot List / On-screen text / Voiceover / Method tabs) |
-| `pack/` | `Birthday_Elements_Pack.zip` — background, voiceover (WAV + MP3), 24 transparent PNG cut-outs, README |
-| `assets/` | `bg_paper.png` (paper texture) and `vo_hindi.mp3` (narration) as loose files |
-| `frames/` | `Birthday_ContactSheets_6x6.zip` — 82 contact sheets, 36 frames each, every frame labelled with its number and timecode (12 fps grid over the whole video) |
+| `spec/Birthday_Video_Build_Spec.md` | The build brief: render settings, asset manifest, motion rules, 56-shot timeline with in/out timecodes, exact text copy with cue frames, voiceover map, verification checklist, and a JSON timeline an agent can load directly |
+| `shotlist/Birthday_Video_Shotlist.xlsx` | The same timeline as a spreadsheet — Shot List / On-screen text / Voiceover / Method tabs |
+| `assets/bg_paper.png` | The paper texture used for the whole video, nothing else on it |
+
+## Download the big files
+
+They live in the [release](../../releases/tag/birthday-video-kit-v1):
+
+| Asset | What it is |
+|---|---|
+| `Birthday_Elements_Pack.zip` | Background, voiceover (48 kHz WAV + MP3), 24 transparent PNG cut-outs, README |
+| `Birthday_ContactSheets_6x6.zip` | 82 contact sheets, 36 frames each, every frame labelled with its number and timecode |
+| `vo_hindi.mp3` | Hindi narration only, 192 kbps |
 
 ## How the timings were produced
 
@@ -20,5 +30,5 @@ timings come from the supplied SRT. Accuracy is about ±1 frame (±0.083 s).
 ## Notes
 
 - The font is not included — supply the .ttf used in the original.
-- `pack/README.md` lists which assets are clean cut-outs and which should come from your
-  own library.
+- `README.md` inside the elements pack lists which assets are clean cut-outs and which
+  should come from your own library.
